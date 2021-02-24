@@ -1,17 +1,8 @@
 #!/bin/bash
 
-#varriables
 
-github=github_origin
-gitlab=gitlab_origin
-bit=bit_origin
+git push github_origin master
+git push gitlab_origin master
+git push bit_origin master
 
-#array
-
-declare -a array_git=(github gitlab bit)
-
-for i in "${array_git[@]}"
-   do
-    git push $i master
-done
 
